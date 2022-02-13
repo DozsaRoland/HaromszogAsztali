@@ -13,11 +13,11 @@ namespace HaromszogAsztali
         public double c { get; set; }
 
 
-        public _3szogalapok(double _a, double _b, double _c)
+        public _3szogalapok(double _a_, double _b_, double _c_)
         {
-            a = _a;
-            b = _b;
-            c = _c;
+            a = _a_;
+            b = _b_;
+            c = _c_;
         }
 
         public bool szerkeszt()
@@ -35,6 +35,11 @@ namespace HaromszogAsztali
         {
             double s = K() / 2;
             return Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+        }
+
+        public double Magassag()
+        {
+            return K() / 2;
         }
     }
 
