@@ -39,7 +39,8 @@ namespace HaromszogAsztali
 
         public double Magassag()
         {
-            return K() / 2;
+            double m = K();
+            return m / 2;
         }
     }
 
