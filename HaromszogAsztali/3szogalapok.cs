@@ -20,7 +20,7 @@ namespace HaromszogAsztali
             c = _c_;
         }
 
-        public bool szerkeszt()
+        public bool Szerkeszt()
         {
             if (a + b > c && a + c > b && b + c > a) return true;
             throw new _3szogkivetel();

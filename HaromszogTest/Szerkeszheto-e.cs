@@ -18,7 +18,7 @@ namespace HaromszogTest
         public void SzerkesztIgaz(double a, double b, double c)
         {
             _3szogalapok s = new _3szogalapok(a, b, c);
-            bool result = s.szerkeszt();
+            bool result = s.Szerkeszt();
             Assert.IsTrue(result);
         }
 
@@ -31,7 +31,7 @@ namespace HaromszogTest
             _3szogalapok s = new _3szogalapok(a, b, c);
             try
             {
-                bool result = s.szerkeszt();
+                bool result = s.Szerkeszt();
                 Assert.Fail();
             }
             catch (Exception ex)
